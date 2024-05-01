@@ -1,7 +1,16 @@
+import { Link } from "react-router-dom"
+import BannerImage from "../../assets/homebanner.jpg"
+import "../../styles/Home.css"
 
 const Home = () => {
   return (
-    <div>Home</div>
+    <div className="mainPage" style={{ backgroundImage: `url(${BannerImage})` }}>
+      <div className="order">
+        <Link to="/menu" >
+          <button>SİPARİŞ VER</button>
+        </Link>
+      </div>
+    </div>
   )
 }
 
